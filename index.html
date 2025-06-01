@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=Edge">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body background="IMG_00397.png">
+    <form name="myGameSite">
+        <div class="header__inner">
+            <nav class="header__nav nav" id="js-nav">
+                <div class="menu">
+                    <span class="font-poiret-1">Menu</span>
+                    <span id="anderbar"></span>
+                    <ul class="nav__items nav-items">    
+                        <li class="nav-items__item">Home</span></a></li>
+                        <li class="nav-items__item">Questionary about this store</span></a></li>
+                        <li class="nav-items__item">Product List</span></a></li>
+                        <li class="nav-items__item">Owner Introduction</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="loginbox">
+            <p>Game Title</p>
+            <p class="welcome">Welcom</p>
+            <div class="prompt">
+                <button type="button" class="upload_button" onclick="saveDetaUpload (this)">
+                    <a>セーブデータをアップロード．．．</a>
+                    <img src="upload_24.png">
+                </button>
+                <textarea id="output" cols="80" rows="10" placeholder="-- inport text here --"></textarea>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
