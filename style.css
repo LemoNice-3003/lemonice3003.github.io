@@ -20,75 +20,9 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
-.loginbox {
-    position: absolute;
-    background: rgb(255, 255, 255, .3);
-    top: calc(50% - (90vh / 2));
-    left: calc(50% - (30vw / 2));
-    width: 30vw;
-    height: 90vh;
-    border-radius: 10%;
-    z-index: 1;
-    text-align: center;
-    box-shadow: 0px 0px 20px #9fc5e8;
-    backdrop-filter: blur(8px);
-    overflow: hidden;
-}
-p {
-    font-size:8vh;
-    color: aliceblue;
-    font-family: "Bad Script", cursive;
-    text-shadow: 0px 0px 6px #9fc5e8;
-    letter-spacing: -1px;
-    font-weight: 500;
-}
-.welcome {
-    font-size:4vh;
-    color: aliceblue;
-    font-family: "Grandiflora One", cursive;
-    text-shadow: 0px 0px 6px #9fc5e8;
-    letter-spacing: -1px;
-    font-weight: 400;
-    margin: -12.5vh 0 12vh;
-}
-.prompt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.upload_button {
-    aspect-ratio: 9/1; /*アスペクト比を１３：１（横：縦）に設定*/
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    background: rgb(238, 238, 238);
-    border: solid 1px aliceblue;
-    border-radius: 12px;
-}
-.upload_button img {
-    margin-right: 2%;
-    height: 90%;
-}
-.upload_button a {
-    margin-left: 2%;
-    font-family: "bad Script", cursive;
-    font-size: 2vh;
-    color: black;
-}
-
-textarea {
-    width: 60%;
-    margin: 5%;
-    scrollbar-width: none;
-    overflow: hidden;
-}
 .header__inner{
     height: 100%;
-    padding: 20px 20px;
+    padding: 20px 10px;
     position: sticky;
     top: 0;
     left: 0;
@@ -165,7 +99,7 @@ textarea {
     top: 0;
 }
 .hamburger span:nth-child(2){
-    margin: 17px 0;
+    margin: 18px 0;
 }
 .hamburger span:nth-child(3){
     top: 0;
@@ -186,16 +120,84 @@ textarea {
     top: -18px;
     transform: rotate(-25deg);
 }
-.icon{
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 119.26px);
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icon span{
-    font-size: 55px;
-    position: absolute;
-    bottom: 0px;
+.loginbox {
+    width: 30vw;
+    height: 90vh;
+    background: rgb(255, 255, 255, .3);
+    border-radius: 10%;
+    z-index: 1;
+    text-align: center;
+    box-shadow: 0px 0px 20px #9fc5e8;
+    backdrop-filter: blur(1vh);
 }
+.container.active{
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size:8vh;
+    color: aliceblue;
+    font-family: "Bad Script", cursive;
+    text-shadow: 0px 0px 6px #9fc5e8;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.welcome {
+    font-size:4vh;
+    color: aliceblue;
+    font-family: "Grandiflora One", cursive;
+    text-shadow: 0px 0px 6px #9fc5e8;
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin: -12.5vh 0 12vh;
+}
+.prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload_button {
+    aspect-ratio: 9/1; /*アスペクト比設定*/
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(238, 238, 238);
+    border: solid 1px aliceblue;
+    border-radius: 12px;
+}
+.upload_button img {
+    margin-right: 2%;
+    height: 90%;
+}
+.upload_button a {
+    margin-left: 2%;
+    font-family: "bad Script", cursive;
+    font-size: 2vh;
+    color: black;
+}
+
+textarea {
+    width: 60%;
+    margin: 5%;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+
 
 @media (max-width: 999px) { /*スマホモード*/
     .loginbox {
