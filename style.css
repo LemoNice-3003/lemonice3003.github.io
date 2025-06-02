@@ -20,14 +20,6 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-myGameSite {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
 
 .loginbox {
     position: absolute;
